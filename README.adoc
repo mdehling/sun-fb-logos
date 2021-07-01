@@ -9,6 +9,12 @@ booting a SPARCstation, Ultra, or other SUN machine.  Unless mentioned
 otherwise, these are pixel-exact copies of the logos taken straight from the
 firmware.
 
+NOTE:  If the colors don't look right, it may be a browser problem.  E.g., on
+firefox I had to set `gfx.color_management.mode = 0` in `about:config`.  The
+colors in the images are _exactly_ right, so just use a proper image viewer
+instead of a browser.
+
+
 ==== Original
 This is the old logo as seen when booting a SUN-3 or early SPARCstation.  If
 you have a color framebuffer, e.g., a CG3, the logo is drawn in `sun-blue`
