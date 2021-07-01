@@ -1,0 +1,40 @@
+# SUN Framebuffer Logos
+Malte Dehling <mdehling@gmail.com>
+
+:imagesdir: https://raw.githubusercontent.com/1k5/sun-fb-logos/main/
+
+
+This repository contains SUN framebuffer logos, i.e., the logos you see when
+booting a SPARCstation, Ultra, or other SUN machine.  Unless mentioned
+otherwise, these are pixel-exact copies of the logos taken straight from the
+firmware.
+
+==== Original
+This is the old logo as seen when booting a SUN-3 or early SPARCstation.  If
+you have a color framebuffer, e.g., a CG3, the logo is drawn in `sun-blue`
+(that's exactly `#6441b4`.)
+
+image:sun-logo.png["B/W SUN Logo"]
+image:sun-logo-blue.png["Blue SUN Logo"]
+
+==== CG6
+image:cg6-logo.png["CG6 Logo"]
+
+==== CG14 / SX
+The CG14 / SX has three logos that are shown at random.
+
+image:cg14-logo0.png["CG14 / SX Logo 0"]
+image:cg14-logo1.png["CG14 / SX Logo 1"]
+image:cg14-logo2.png["CG14 / SX Logo 2"]
+
+==== TCX / FSV
+image:fsv-logo.png["TCX / FSV Logo"]
+
+==== RasterFlex-HR
+The RasterFlex-HR FCode (firmware) contains the image's pixel data but no
+reference to a color map.  I have constructed an 8-bit color map using (3,3,2)
+bits for (r,g,b) in the usual way.  The result looks right to me, though I
+can't say whether the colors are _exactly_ right.
+
+image:rfx-logo.png["RasterFlex-HR Logo"]
+
