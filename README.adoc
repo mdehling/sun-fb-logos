@@ -47,3 +47,5 @@ image:rfx-logo.png["RasterFlex-HR Logo"]
 ==== XVR-100
 image:xvr100-logo.png["XVR-100 Logo"]
 
+==== SPARCbook 3
+image:sparcbook3-logo.png["SPARCbook 3 Logo"]
