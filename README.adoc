@@ -44,3 +44,6 @@ can't say whether the colors are _exactly_ right.
 
 image:rfx-logo.png["RasterFlex-HR Logo"]
 
+==== XVR-100
+image:xvr100-logo.png["XVR-100 Logo"]
+
