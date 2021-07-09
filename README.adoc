@@ -47,6 +47,9 @@ image:rfx-logo.png["RasterFlex-HR Logo"]
 ==== FFB / Creator 3D
 image:ffb-logo.png["FFB / Creator 3D Logo"]
 
+==== AFB / Elite 3D
+image:afb-logo.png["AFB / Elite 3D Logo"]
+
 ==== XVR-100
 image:xvr100-logo.png["XVR-100 Logo"]
 
