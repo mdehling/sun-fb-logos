@@ -15,7 +15,11 @@ colors in the images are _exactly_ right, so just use a proper image viewer
 instead of a browser.
 
 
-==== Original
+The Logos
+---------
+
+Original
+~~~~~~~~
 This is the old logo as seen when booting a SUN-3 or early SPARCstation.  If
 you have a color framebuffer, e.g., a CG3, the logo is drawn in `sun-blue`
 (that's exactly `#6441b4`.)
@@ -23,20 +27,24 @@ you have a color framebuffer, e.g., a CG3, the logo is drawn in `sun-blue`
 image:sun-logo.png["B/W SUN Logo"]
 image:sun-logo-blue.png["Blue SUN Logo"]
 
-==== CG6
+CG6
+~~~
 image:cg6-logo.png["CG6 Logo"]
 
-==== CG14 / SX
+CG14 / SX
+~~~~~~~~~
 The CG14 / SX has three logos that are shown at random.
 
 image:cg14-logo0.png["CG14 / SX Logo 0"]
 image:cg14-logo1.png["CG14 / SX Logo 1"]
 image:cg14-logo2.png["CG14 / SX Logo 2"]
 
-==== TCX / FSV
+TCX / FSV
+~~~~~~~~~
 image:fsv-logo.png["TCX / FSV Logo"]
 
-==== RasterFlex-HR
+RasterFlex-HR
+~~~~~~~~~~~~~
 The RasterFlex-HR FCode (firmware) contains the image's pixel data but no
 reference to a color map.  I have constructed an 8-bit color map using (3,3,2)
 bits for (r,g,b) in the usual way.  The result looks right to me, though I
@@ -44,14 +52,21 @@ can't say whether the colors are _exactly_ right.
 
 image:rfx-logo.png["RasterFlex-HR Logo"]
 
-==== FFB / Creator 3D
+FFB / Creator 3D
+~~~~~~~~~~~~~~~~
 image:ffb-logo.png["FFB / Creator 3D Logo"]
 
-==== AFB / Elite 3D
+AFB / Elite 3D
+~~~~~~~~~~~~~~
 image:afb-logo.png["AFB / Elite 3D Logo"]
 
-==== XVR-100
+XVR-100
+~~~~~~~
 image:xvr100-logo.png["XVR-100 Logo"]
 
-==== SPARCbook 3
+SPARCbook 3
+~~~~~~~~~~~
+This is the large logo that the SPARCbook 3 shows when powered on.  I have not yet
+found the smaller version of the logo that is shown above the banner.
+
 image:sparcbook3-logo.png["SPARCbook 3 Logo"]
