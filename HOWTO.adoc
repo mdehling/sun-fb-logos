@@ -1,0 +1,174 @@
+= HOWTO Dump SUN Device Firmware
+Malte Dehling <mdehling@gmail.com>
+
+
+The goal of this document is to describe a simple way of reading the FCode
+(firmware) on SUN expansion cards of various types.  For SBUS cards, the
+easiest way to do this is if you're running SunOS / Solaris.  For other bus
+types and for SBUS in case you are not running SunOS / Solaris, a convenient
+way is to read the firmware from the OpenBoot `ok` prompt.  To capture the
+data, you will need to set up a serial connection and enable logging.
+Unplugging the keyboard should make ttya the console.  Then, on Linux / Unix /
+MacOS simply run `script` in a terminal and connect using `cu -l /dev/ttyUSB0`
+or `tip hardwire` or such.  To end the `script` session simply type `<Ctrl>+d`;
+this should leave you with a log file of your session called `typescript`.  On
+Windows you could use Putty and enable logging in the settings.
+
+
+SBUS Cards
+----------
+If you're running SunOS / Solaris, you can simply read the PROM from a
+character device using dd as follows (as root.)
+
+----
+# dd if=sbusX-device bs=1k count=32 of=/tmp/sbusX.bin
+----
+
+On SunOS 4.x / Solaris 1.x the device name is `/dev/sbusX`, on SunOS 5.x /
+Solaris 2.x it is `/devices/sbus*/sbusmem@X,0:slotX` or
+`/devices/iommu*/sbus*/sbusmem@X,0:slotX`, depending on the machine type
+(kernel architeture.)
+
+Another way to read the PROM contents is from the OpenBoot prompt.  Assuming
+OpenBoot 2.x with new style `ok` prompt, navigate the device tree to the
+relevant device, map its memory, and dump the contents.  For a cgsix card in a
+sun4m machine this would look as follows:
+
+----
+ok cd /iommu/sbus/cgsix
+ok 0 8000 map-sbus
+ok 8000 dump
+          \/  1  2  3  4  5  6  7   8  9  a  b  c  d  e  f  v123456789abcdef
+ffe00000  fd 03 cb 96 00 00 26 6c  cc 12 05 63 67 73 69 78  ......&l...cgsix
+ffe00010  01 14 12 04 6e 61 6d 65  01 10 12 0d 53 55 4e 57  ....name....SUNW
+ffe00020  2c 35 30 31 2d 32 32 35  33 01 19 12 07 64 69 73  ,501-2253....dis
+ffe00030  70 6c 61 79 01 1a b6 09  63 6f 70 79 72 69 67 68  play....copyrigh
+ffe00040  74 08 00 b7 12 2d 43 6f  70 79 72 69 67 68 74 20  t....-Copyright 
+ffe00050  28 63 29 20 31 39 39 31  20 62 79 20 53 75 6e 20  (c) 1991 by Sun 
+ffe00060  4d 69 63 72 6f 73 79 73  74 65 6d 73 2c 20 49 6e  Microsystems, In
+ffe00070  63 2e 20 c2 b6 06 73 63  63 73 69 64 08 01 b7 12  c. ...sccsid....
+ffe00080  0f 40 28 23 29 54 75 72  62 6f 47 58 20 32 2e 30  .@(#)TurboGX 2.0
+[...]
+More [<space>,<cr>,q,n,p,c] ?
+----
+
+At the `More` prompt, answer `c` to continue the rest of the dump without
+interruption.
+
+To find your device in the device tree, you can navigate it (almost) as if it
+were a unix system, e.g., use `cd /`, `ls`, `cd iommu`, `pwd`, etc.  You do not
+need to type the part after the `@` symbol if it is unique.
+
+NOTE: The first approach does not work for onboard SBUS devices while the
+second does!
+
+
+UPA Cards
+---------
+UPA devices live in the root of the device tree, at least on the systems I have
+access to.  Simply do `cd /` followed by `ls` to locate your device.  Now go to
+your device, use `.properties` (or `.attributes` on OBP 2.x) to find its
+address, map its memory, and finally dump the contents.  For a Creator 3D in an
+Ultra 60 this is done as follows:
+
+----
+ok cd /SUNW,ffb
+ok .properties
+[...]
+reg                      000001fc 00000000 00000000 00000400
+                         ^^^^^^^^ ^^^^^^^^ ^^^^^^^^
+[...]
+ok 0 0 1fc 80000 " map-in" $call-parent
+ok 80000 dump
+          \/  1  2  3  4  5  6  7   8  9  a  b  c  d  e  f  v123456789abcdef
+fff5c000  f3 00 01 2c 03 00 01 2c  c7 00 01 2c 71 00 01 2c  s..,...,G..,q..,
+fff5c010  00 00 01 2c 00 00 01 2c  45 00 01 2c 5c 00 01 2c  ...,...,E..,\..,
+fff5c020  cc 00 01 2c 12 00 01 2c  08 00 01 2c 53 00 01 2c  L..,...,...,S..,
+fff5c030  55 00 01 2c 4e 00 01 2c  57 00 01 2c 2c 00 01 2c  U..,N..,W..,,..,
+fff5c040  66 00 01 2c 66 00 01 2c  62 00 01 2c 01 00 01 2c  f..,f..,b..,...,
+fff5c050  14 00 01 2c 12 00 01 2c  04 00 01 2c 6e 00 01 2c  ...,...,...,n..,
+fff5c060  61 00 01 2c 6d 00 01 2c  65 00 01 2c 01 00 01 2c  a..,m..,e..,...,
+fff5c070  10 00 01 2c 12 00 01 2c  07 00 01 2c 64 00 01 2c  ...,...,...,d..,
+fff5c080  69 00 01 2c 73 00 01 2c  70 00 01 2c 6c 00 01 2c  i..,s..,p..,l..,
+[...]
+More [<space>,<cr>,q,n,p,c] ?
+----
+
+The first three numbers in the `map-in` line should match the ones in the first
+line of the `reg` property in reverse order.
+
+Again, answer `c` at the `More` prompt to continue dumping the PROM without
+interruption.  This will take a while (possibly several minutes) and the
+resulting log file should be around 2.5MB in size.  The reason is that only
+every fourth byte is actually relevant data for some reason.
+
+
+PCI Cards
+---------
+The process for PCI devices is very similar to that for UPA devices, except
+that access to the firmware needs to be enabled first by writing to the
+configuration memory.  First, locate your device as before and use
+`.properties` to show its `reg` property.  This property has two relevant
+lines: the first starts with `00` (configuration), the other's first number
+ends in `30` (expansion.)
+
+----
+ok cd /pci/SUNW,XVR-100
+ok .properties
+[...]
+reg                      00800800 00000000 00000000 00000000 00000000
+                         ^^^^^^^^
+                         02800830 00000000 00000000 00000000 00020000
+                         ^^^^^^^^ ^^^^^^^^ ^^^^^^^^          ^^^^^^^^
+[...]
+----
+
+Use the first number from the configuration line to enable firmware access:
+
+----
+ok 800800 4 + dup config-w@ 2 or swap config-w!
+ok 800800 30 + dup config-l@ 1 or swap config-l!
+----
+
+Next, use the first three numbers from the expansion line (in reverse order)
+and the last number to map in the firmware.  Use the `dump` command to dump the
+firmware as before.
+
+----
+ok 0 0 2800830 20000 map-in
+ok 20000 dump
+          \/  1  2  3  4  5  6  7   8  9  a  b  c  d  e  f  v123456789abcdef
+fff08000  55 aa 34 00 00 00 00 00  00 00 00 00 00 00 00 00  U*4.............
+fff08010  00 00 00 00 00 00 00 00  1c 00 00 00 50 43 49 52  ............PCIR
+fff08020  02 10 59 51 00 c0 18 00  00 00 00 03 5b 00 04 00  ..YQ.@......[...
+fff08030  01 80 00 00 f1 08 3b 46  00 00 b5 1c 12 42 00 00  ....q.;F..5..B..
+fff08040  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+fff08050  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+fff08060  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+fff08070  c7 bf 00 00 02 10 08 09  00 00 00 00 00 00 00 00  G?..............
+fff08080  52 12 0c 53 55 4e 57 2c  58 56 52 2d 31 30 30 01  R..SUNW,XVR-100.
+fff08090  14 12 04 6e 61 6d 65 01  10 12 0d 53 55 4e 57 2c  ...name....SUNW,
+fff080a0  33 37 35 2d 33 31 38 31  01 19 12 07 64 69 73 70  375-3181....disp
+fff080b0  6c 61 79 01 1a b6 09 63  6f 70 79 72 69 67 68 74  lay..6.copyright
+fff080c0  08 00 b7 12 29 43 6f 70  79 72 69 67 68 74 20 28  ..7.)Copyright (
+fff080d0  63 29 20 32 30 30 33 20  53 75 6e 20 4d 69 63 72  c) 2003 Sun Micr
+fff080e0  6f 73 79 73 74 65 6d 73  2c 20 49 6e 63 2e c2 b6  osystems, Inc.B6
+fff080f0  06 73 63 63 73 69 64 08  01 b7 12 20 40 28 23 29  .sccsid..7. @(#)
+fff08100  78 76 72 31 30 30 2e 66  74 68 20 32 2e 33 20 30  xvr100.fth 2.3 0
+fff08110  33 2f 31 30 2f 31 37 20  53 4d 49 20 c2 b6 0a 70  3/10/17 SMI B6.p
+fff08120  72 74 2d 73 63 63 73 69  64 08 02 b7 08 01 90 08  rt-sccsid..7....
+fff08130  00 90 c2 10 00 00 00 ff  10 00 00 00 ff 10 00 00  ..B.............
+fff08140  00 ff 10 00 00 00 ff 7f  b6 06 6e 75 6d 2d 33 32  ........6.num-32
+fff08150  08 03 ba b6 05 78 2d 6e  75 6d 08 04 b7 08 03 23  ..:6.x-num..7..#
+More [<space>,<cr>,q,n,p,c] ?
+----
+
+At the `More` prompt, answer `c` to continue without further interruptions.
+This should transfer roughly 600KB of data, so it might take a little bit
+depending on your baud rate.
+
+
+PCIe Cards
+----------
+I don't have any PCIe devices or Workstations so I have no clue.  If you know
+how to do this, please let me know!

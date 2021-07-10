@@ -15,6 +15,14 @@ colors in the images are _exactly_ right, so just use a proper image viewer
 instead of a browser.
 
 
+How to Help
+-----------
+If you have any framebuffers with logos you don't see on this page, you can
+help me out by sending me their firmware.  All you need is a serial connection
+to your SUN computer.  I wrote a little link:HOWTO.adoc[HOWTO] document
+explaining the process.
+
+
 The Logos
 ---------
 
