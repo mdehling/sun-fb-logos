@@ -51,6 +51,10 @@ TCX / FSV
 ~~~~~~~~~
 image:fsv-logo.png["TCX / FSV Logo"]
 
+TurboZX / Leo
+~~~~~~~~~~~~~
+image:leo-logo.png["TurboZX / Leo Logo"]
+
 RasterFlex-HR
 ~~~~~~~~~~~~~
 image:rfx-logo.png["RasterFlex-HR Logo"]
