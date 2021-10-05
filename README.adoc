@@ -59,6 +59,10 @@ RasterFlex-HR
 ~~~~~~~~~~~~~
 image:rfx-logo.png["RasterFlex-HR Logo"]
 
+Dome Md5/SBX
+~~~~~~~~~~~~
+image:dome-md5sbx-logo.png["Dome Md5/SBX Logo"]
+
 FFB / Creator 3D
 ~~~~~~~~~~~~~~~~
 image:ffb-logo.png["FFB / Creator 3D Logo"]
