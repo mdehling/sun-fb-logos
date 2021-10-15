@@ -77,7 +77,6 @@ image:xvr100-logo.png["XVR-100 Logo"]
 
 SPARCbook 3
 ~~~~~~~~~~~
-This is the large logo that the SPARCbook 3 shows when powered on.  I have not yet
-found the smaller version of the logo that is shown above the banner.
-
-image:sparcbook3-logo.png["SPARCbook 3 Logo"]
+This is the splash screen logo that the SPARCbook 3 shows when powered on.  The
+smaller logo that is shown above the banner will follow soon.
+image:sparcbook-3-splash.png["SPARCbook 3 Splash Screen"]
