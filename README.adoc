@@ -80,3 +80,7 @@ SPARCbook 3
 This is the splash screen logo that the SPARCbook 3 shows when powered on.  The
 smaller logo that is shown above the banner will follow soon.
 image:sparcbook-3-splash.png["SPARCbook 3 Splash Screen"]
+
+SPARCbook 3GX
+~~~~~~~~~~~~~
+image:sparcbook-3gx-logo.png["SPARCbook 3GX Logo"]
