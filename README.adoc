@@ -86,4 +86,9 @@ image:sparcbook-3-splash.png["SPARCbook 3 Splash Screen"]
 
 SPARCbook 3GX
 ~~~~~~~~~~~~~
+The smaller logo is the Tadpole logo shown to the left of the banner, the
+larger is the splash screen logo shown first when the SPARCbook is powered on.
+
 image:sparcbook-3gx-logo.png["SPARCbook 3GX Logo"]
+
+image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
