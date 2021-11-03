@@ -55,9 +55,13 @@ TurboZX / Leo
 ~~~~~~~~~~~~~
 image:leo-logo.png["TurboZX / Leo Logo"]
 
+RasterFlex-32
+~~~~~~~~~~~~~
+image:rfx-32-logo.png["RasterFlex-32 Logo"]
+
 RasterFlex-HR
 ~~~~~~~~~~~~~
-image:rfx-logo.png["RasterFlex-HR Logo"]
+image:rfx-hr-logo.png["RasterFlex-HR Logo"]
 
 Dome Md5/SBX
 ~~~~~~~~~~~~
@@ -92,3 +96,4 @@ larger is the splash screen logo shown first when the SPARCbook is powered on.
 image:sparcbook-3gx-logo.png["SPARCbook 3GX Logo"]
 
 image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
+
