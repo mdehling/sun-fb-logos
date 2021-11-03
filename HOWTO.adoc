@@ -14,6 +14,9 @@ or `tip hardwire` or such.  To end the `script` session simply type `<Ctrl>+d`;
 this should leave you with a log file of your session called `typescript`.  On
 Windows you could use Putty and enable logging in the settings.
 
+If you have any issues following these instructions, do not hesitate to contact
+me!
+
 
 SBUS Cards
 ----------
@@ -31,12 +34,13 @@ Solaris 2.x it is `/devices/sbus*/sbusmem@X,0:slotX` or
 
 Another way to read the PROM contents is from the OpenBoot prompt.  Assuming
 OpenBoot 2.x with new style `ok` prompt, navigate the device tree to the
-relevant device, map its memory, and dump the contents.  For a cgsix card in a
-sun4m machine this would look as follows:
+relevant device, map its memory, and dump the contents.  For a cgsix card in
+SBUS slot 1 of a sun4m machine this would look as follows:
 
 ----
-ok cd /iommu/sbus/cgsix
-ok 0 8000 map-sbus
+ok " /iommu/sbus" select-dev
+ok " 1,0" decode-unit
+ok 8000 map-in
 ok 8000 dump
           \/  1  2  3  4  5  6  7   8  9  a  b  c  d  e  f  v123456789abcdef
 ffe00000  fd 03 cb 96 00 00 26 6c  cc 12 05 63 67 73 69 78  ......&l...cgsix
@@ -54,6 +58,22 @@ More [<space>,<cr>,q,n,p,c] ?
 
 At the `More` prompt, answer `c` to continue the rest of the dump without
 interruption.
+
+In older OBP versions the `dump` command doesn't have the `c` option which
+makes it useless for dumping large amounts of data.  In that case, use the
+following instead to dump the PROM one byte per line: (You could use other
+ways, too, but this one is the easiest for me as I've already written the
+conversion program to turn in into a binary.)
+
+----
+ok 8000 0 do dup i + c@ . cr loop
+f1
+3
+cb
+96
+[...]
+ok
+----
 
 To find your device in the device tree, you can navigate it (almost) as if it
 were a unix system, e.g., use `cd /`, `ls`, `cd iommu`, `pwd`, etc.  You do not
