@@ -35,6 +35,10 @@ you have a color framebuffer, e.g., a CG3, the logo is drawn in `sun-blue`
 image:sun-logo.png["B/W SUN Logo"]
 image:sun-logo-blue.png["Blue SUN Logo"]
 
+OEM / Clones
+~~~~~~~~~~~~
+image:oem-logo-berthold.png["Berthold Logo"]
+
 CG6
 ~~~
 image:cg6-logo.png["CG6 Logo"]
