@@ -1,7 +1,7 @@
-# SUN Framebuffer Logos
+= SUN Framebuffer Logos
 Malte Dehling <mdehling@gmail.com>
 
-:imagesdir: https://raw.githubusercontent.com/1k5/sun-fb-logos/main/
+:imagesdir: https://raw.githubusercontent.com/mdehling/sun-fb-logos/main/
 
 
 This repository contains SUN framebuffer logos, i.e., the logos you see when
