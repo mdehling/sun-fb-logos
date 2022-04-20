@@ -87,6 +87,10 @@ PGX32 / Raptor GFXP
 ~~~~~~~~~~~~~~~~~~~
 image:gfxp-logo.png["PGX32 / Raptor GFXP Logo"]
 
+Raptor GFX 550e
+~~~~~~~~~~~~~~~
+image:mko-logo.png["Raptor GFX 550e Logo"]
+
 SPARCbook 3
 ~~~~~~~~~~~
 The smaller logo is the one shown above the banner, the larger is the splash
