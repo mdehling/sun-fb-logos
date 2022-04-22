@@ -95,6 +95,10 @@ Raptor GFX 550e
 ~~~~~~~~~~~~~~~
 image:tsi-mko-logo.png["Raptor GFX 550e Logo"]
 
+Raptor MED 12 SL
+~~~~~~~~~~~~~~~~
+image:tsi-meds-logo.png["Raptor MED 12 SL Logo"]
+
 SPARCbook 3
 ~~~~~~~~~~~
 The smaller logo is the one shown above the banner, the larger is the splash
