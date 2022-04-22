@@ -89,11 +89,11 @@ image:xvr2500-logo.png["XVR-2500 Logo"]
 
 PGX32 / Raptor GFXP
 ~~~~~~~~~~~~~~~~~~~
-image:gfxp-logo.png["PGX32 / Raptor GFXP Logo"]
+image:tsi-gfxp-logo.png["PGX32 / Raptor GFXP Logo"]
 
 Raptor GFX 550e
 ~~~~~~~~~~~~~~~
-image:mko-logo.png["Raptor GFX 550e Logo"]
+image:tsi-mko-logo.png["Raptor GFX 550e Logo"]
 
 SPARCbook 3
 ~~~~~~~~~~~
