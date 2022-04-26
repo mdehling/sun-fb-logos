@@ -129,8 +129,9 @@ The process for PCI(e) devices is very similar to that for UPA devices, except
 that access to the firmware needs to be enabled first by writing to the
 configuration memory.  Begin by locating your device as before, and use
 `.properties` to show its `reg` property.  This property has two relevant
-lines: the first starts and ends with `00` (configuration), the other's first
-number starts with `02` and ends in `30` (expansion.)
+lines: the first number of the first line starts and ends with `00`
+(configuration), the other line's first number starts with `02` and ends in
+`30` (expansion.)
 
 ----
 ok cd /pci/SUNW,XVR-100
