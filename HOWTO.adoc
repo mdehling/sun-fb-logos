@@ -123,14 +123,14 @@ resulting log file should be around 2.5MB in size.  The reason is that only
 every fourth byte is actually relevant data for some reason.
 
 
-PCI Cards
----------
-The process for PCI devices is very similar to that for UPA devices, except
+PCI(e) Cards
+------------
+The process for PCI(e) devices is very similar to that for UPA devices, except
 that access to the firmware needs to be enabled first by writing to the
-configuration memory.  First, locate your device as before and use
+configuration memory.  Begin by locating your device as before, and use
 `.properties` to show its `reg` property.  This property has two relevant
-lines: the first starts with `00` (configuration), the other's first number
-ends in `30` (expansion.)
+lines: the first starts and ends with `00` (configuration), the other's first
+number starts with `02` and ends in `30` (expansion.)
 
 ----
 ok cd /pci/SUNW,XVR-100
@@ -143,9 +143,12 @@ reg                      00800800 00000000 00000000 00000000 00000000
 [...]
 ----
 
-Use the first number from the configuration line to enable firmware access:
+Select the parent node of the PCI(e) card in question, i.e. `/pci` in this
+case, and use the first number from the configuration line to enable firmware
+access:
 
 ----
+ok " /pci" select-dev
 ok 800800 4 + dup config-w@ 2 or swap config-w!
 ok 800800 30 + dup config-l@ 1 or swap config-l!
 ----
@@ -186,9 +189,3 @@ More [<space>,<cr>,q,n,p,c] ?
 At the `More` prompt, answer `c` to continue without further interruptions.
 This should transfer roughly 600KB of data, so it might take a little bit
 depending on your baud rate.
-
-
-PCIe Cards
-----------
-I don't have any PCIe devices or Workstations so I have no clue.  If you know
-how to do this, please let me know!
