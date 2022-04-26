@@ -1,11 +1,11 @@
-= SUN Framebuffer Logos
+= Sun Framebuffer Logos
 Malte Dehling <mdehling@gmail.com>
 
 :imagesdir: https://raw.githubusercontent.com/mdehling/sun-fb-logos/main/
 
 
-This repository contains SUN framebuffer logos, i.e., the logos you see when
-booting a SPARCstation, Ultra, or other SUN machine.  Unless mentioned
+This repository contains Sun framebuffer logos, i.e., the logos you see when
+booting a SPARCstation, Ultra, or other Sun machine.  Unless mentioned
 otherwise, these are pixel-exact copies of the logos taken straight from the
 firmware.
 
@@ -19,7 +19,7 @@ How to Help
 -----------
 If you have any framebuffers with logos you don't see on this page, you can
 help me out by sending me their firmware.  All you need is a serial connection
-to your SUN computer.  I wrote a little link:HOWTO.adoc[HOWTO] document
+to your Sun computer.  I wrote a little link:HOWTO.adoc[HOWTO] document
 explaining the process.
 
 
@@ -28,12 +28,12 @@ The Logos
 
 Original
 ~~~~~~~~
-This is the old logo as seen when booting a SUN-3 or early SPARCstation.  If
+This is the old logo as seen when booting a Sun-3 or early SPARCstation.  If
 you have a color framebuffer, e.g., a CG3, the logo is drawn in `sun-blue`
 (that's exactly `#6441b4`.)
 
-image:sun-logo.png["B/W SUN Logo"]
-image:sun-logo-blue.png["Blue SUN Logo"]
+image:sun-logo.png["B/W Sun Logo"]
+image:sun-logo-blue.png["Blue Sun Logo"]
 
 OEM / Clones
 ~~~~~~~~~~~~
