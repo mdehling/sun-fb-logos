@@ -145,7 +145,7 @@ reg                      00800800 00000000 00000000 00000000 00000000
 [...]
 ----
 
-Select the parent node of the PCI(e) card in question, i.e. `/pci` in this
+Select the parent node of the PCI(e) card in question, i.e., `/pci` in this
 case, and use the first number from the configuration line to enable firmware
 access:
 
