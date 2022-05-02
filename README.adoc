@@ -39,6 +39,7 @@ OEM / Clones
 ~~~~~~~~~~~~
 image:oem-logo-axil.png["Axil Logo"]
 image:oem-logo-berthold.png["Berthold Logo"]
+image:oem-logo-naturetech.png["NatureTech Logo"]
 
 CG6
 ~~~
