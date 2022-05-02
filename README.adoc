@@ -139,4 +139,4 @@ image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
 Acknowledgements
 ----------------
 A number of people have contributed to this project by sending me PROM images.
-Among them are: Mike Spooner and Chris Satterfield.  Thanks a lot!
+Among them are: Gábor Samu, Chris Satterfield, and Mike Spooner.  Thanks a lot!
