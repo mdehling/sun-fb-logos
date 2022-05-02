@@ -89,6 +89,10 @@ XVR-600
 ~~~~~~~
 image:xvr600-logo.png["XVR-600 Logo"]
 
+XVR-1200
+~~~~~~~~
+image:xvr1200-logo.png["XVR-1200 Logo"]
+
 XVR-2500
 ~~~~~~~~
 image:xvr2500-logo.png["XVR-2500 Logo"]
