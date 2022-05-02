@@ -81,6 +81,10 @@ AFB / Elite 3D
 ~~~~~~~~~~~~~~
 image:afb-logo.png["AFB / Elite 3D Logo"]
 
+IFB / Expert 3D
+~~~~~~~~~~~~~~
+image:ifb-logo.png["IFB / Expert 3D Logo"]
+
 XVR-100
 ~~~~~~~
 image:xvr100-logo.png["XVR-100 Logo"]
