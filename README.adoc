@@ -105,6 +105,10 @@ PGX32 / Raptor GFXP
 ~~~~~~~~~~~~~~~~~~~
 image:tsi-gfxp-logo.png["PGX32 / Raptor GFXP Logo"]
 
+PGX64 / ATI RageXL
+~~~~~~~~~~~~~~~~~~
+image:aty-ragexl-logo.png["PGX64 / ATI RageXL Logo"]
+
 Raptor GFX 550e
 ~~~~~~~~~~~~~~~
 image:tsi-mko-logo.png["Raptor GFX 550e Logo"]
