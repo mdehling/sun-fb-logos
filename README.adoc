@@ -97,6 +97,10 @@ XVR-600
 ~~~~~~~
 image:xvr600-logo.png["XVR-600 Logo"]
 
+GFB / XVR-1000
+~~~~~~~~~~~~~~
+image:xvr1000-logo.png["XVR-1000 Logo"]
+
 XVR-1200
 ~~~~~~~~
 image:xvr1200-logo.png["XVR-1200 Logo"]
@@ -147,4 +151,5 @@ image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
 Acknowledgements
 ----------------
 A number of people have contributed to this project by sending me PROM images.
-Among them are: Gábor Samu, Chris Satterfield, and Mike Spooner.  Thanks a lot!
+Among them are: Neill Griffin, Mark Mehalik, Gábor Samu, Chris
+Satterfield, and Mike Spooner.  Thanks a lot, everyone!
