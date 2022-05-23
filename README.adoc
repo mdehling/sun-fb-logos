@@ -109,6 +109,10 @@ XVR-2500
 ~~~~~~~~
 image:xvr2500-logo.png["XVR-2500 Logo"]
 
+Zulu / XVR-4000
+~~~~~~~~~~~~~~~
+image:xvr4000-logo.png["XVR-4000 Logo"]
+
 PGX32 / Raptor GFXP
 ~~~~~~~~~~~~~~~~~~~
 image:tsi-gfxp-logo.png["PGX32 / Raptor GFXP Logo"]
@@ -151,5 +155,5 @@ image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
 Acknowledgements
 ----------------
 A number of people have contributed to this project by sending me PROM images.
-Among them are: Neill Griffin, Mark Mehalik, Gábor Samu, Chris
-Satterfield, and Mike Spooner.  Thanks a lot, everyone!
+Among them are: Neill Griffin, Mark Mehalik, Gábor Samu, Chris Satterfield,
+Mike Spooner, and Irinikus from irixnet.org.  Thanks a lot, everyone!
