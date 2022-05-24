@@ -133,6 +133,28 @@ Raptor MED 12 SL
 ~~~~~~~~~~~~~~~~
 image:tsi-meds-logo.png["Raptor MED 12 SL Logo"]
 
+JavaStation-NC / Krups
+~~~~~~~~~~~~~~~~~~~~~~
+These are the various segments of the boot screen as contained in the OBP: The
+name banner is displayed in the middle-right area of the screen.
+
+image:krups-myname.png["JavaStation-NC Name Banner"]
+
+The loading animation is shown to the left of the name banner.  In case of a
+network timeout the question mark appears, and an error is indicated by the
+exclamation point.
+
+image:krups-oslogo.gif["JavaStation-NC Loading Animation"]
+image:krups-timeout.png["JavaStation-NC Timeout Logo"]
+image:krups-error.png["JavaStation-NC Error Logo"]
+
+These are the individual frames of the Loading animation.
+
+image:krups-oslogo-0.png["JavaStation-NC Loading Animation Frame 1"]
+image:krups-oslogo-1.png["JavaStation-NC Loading Animation Frame 2"]
+image:krups-oslogo-2.png["JavaStation-NC Loading Animation Frame 3"]
+image:krups-oslogo-3.png["JavaStation-NC Loading Animation Frame 4"]
+
 SPARCbook 3
 ~~~~~~~~~~~
 The smaller logo is the one shown above the banner, the larger is the splash
