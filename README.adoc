@@ -150,10 +150,11 @@ image:krups-error.png["JavaStation-NC Error Logo"]
 
 These are the individual frames of the Loading animation.
 
-image:krups-oslogo-0.png["JavaStation-NC Loading Animation Frame 1"]
-image:krups-oslogo-1.png["JavaStation-NC Loading Animation Frame 2"]
-image:krups-oslogo-2.png["JavaStation-NC Loading Animation Frame 3"]
-image:krups-oslogo-3.png["JavaStation-NC Loading Animation Frame 4"]
+image:krups-oslogo-0.png["JavaStation-NC Loading Animation Frame 0"]
+image:krups-oslogo-1.png["JavaStation-NC Loading Animation Frame 1"]
+image:krups-oslogo-2.png["JavaStation-NC Loading Animation Frame 2"]
+image:krups-oslogo-3.png["JavaStation-NC Loading Animation Frame 3"]
+image:krups-oslogo-4.png["JavaStation-NC Loading Animation Frame 4"]
 
 SPARCbook 3
 ~~~~~~~~~~~
@@ -178,4 +179,5 @@ Acknowledgements
 ----------------
 A number of people have contributed to this project by sending me PROM images.
 Among them are: Neill Griffin, Mark Mehalik, Gábor Samu, Chris Satterfield,
-Mike Spooner, and Irinikus from irixnet.org.  Thanks a lot, everyone!
+Mike Spooner, Valery Ushakov, and Irinikus from irixnet.org.
+Thanks a lot, everyone!
