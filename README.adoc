@@ -125,6 +125,10 @@ Raptor GFX 550e
 ~~~~~~~~~~~~~~~
 image:tsi-mko-logo.png["Raptor GFX 550e Logo"]
 
+Raptor 1100T
+~~~~~~~~~~~~
+image:tsi-rap1kt-logo.png["Raptor 1100T Logo"]
+
 Raptor 4000
 ~~~~~~~~~~~
 image:tsi-rapafp-logo.png["Raptor 4000 Logo"]
