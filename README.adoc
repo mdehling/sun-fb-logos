@@ -37,7 +37,8 @@ image:sun-logo-blue.png["Blue Sun Logo"]
 
 OEM / Clones
 ~~~~~~~~~~~~
-image:oem-logo-axil.png["Axil Logo"]
+image:oem-logo-axil311.png["Axil 311 Logo"]
+image:oem-logo-axil320.png["Axil 320 Logo"]
 image:oem-logo-berthold.png["Berthold Logo"]
 image:oem-logo-naturetech.png["NatureTech Logo"]
 
@@ -182,6 +183,6 @@ image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
 Acknowledgements
 ----------------
 A number of people have contributed to this project by sending me PROM images.
-Among them are: Neill Griffin, Mark Mehalik, Gábor Samu, Chris Satterfield,
-Mike Spooner, Valery Ushakov, and Irinikus from irixnet.org.
+Among them are: Neill Griffin, Mark Mehalik, Darko Mesaroš, Gábor Samu, Chris
+Satterfield, Mike Spooner, Valery Ushakov, and Irinikus from irixnet.org.
 Thanks a lot, everyone!
