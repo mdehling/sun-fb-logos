@@ -95,6 +95,10 @@ XVR-100
 ~~~~~~~
 image:xvr100-logo.png["XVR-100 Logo"]
 
+XVR-300
+~~~~~~~
+image:xvr300-logo.png["XVR-300 Logo"]
+
 XVR-600
 ~~~~~~~
 image:xvr600-logo.png["XVR-600 Logo"]
@@ -184,7 +188,7 @@ image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
 Acknowledgements
 ----------------
 A number of people have contributed to this project by sending me PROM images.
-Among them are: Neill Griffin, Mark Mehalik, Darko Mesaroš, Alan Perry, Gábor
-Samu, Chris Satterfield, Mike Spooner, Valery Ushakov, and Irinikus from
-irixnet.org.
+Among them are: Neill Griffin, Imre Kaloz, Mark Mehalik, Darko Mesaroš, Alan
+Perry, Gábor Samu, Chris Satterfield, Mike Spooner, Valery Ushakov, and
+Irinikus from irixnet.org.
 Thanks a lot, everyone!
