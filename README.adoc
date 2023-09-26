@@ -186,6 +186,10 @@ image:sparcbook-3gx-logo.png["SPARCbook 3GX Logo"]
 
 image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
 
+Fujitsu S-4/Leia2
+~~~~~~~~~~~~~~~~~
+image:fujitsu-s4-leia2-logo.png["Fujitsu S-4/Leia2 Logo"]
+
 
 Acknowledgements
 ----------------
