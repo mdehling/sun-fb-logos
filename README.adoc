@@ -73,13 +73,13 @@ RasterFlex-HR
 ~~~~~~~~~~~~~
 image:rfx-hr-logo.png["RasterFlex-HR Logo"]
 
-Dome Md5/SBX
-~~~~~~~~~~~~
-image:dome-md5sbx-logo.png["Dome Md5/SBX Logo"]
-
 Tech-Source GXTRA/1
 ~~~~~~~~~~~~~~~~~~~
 image:tsi-gxtra1-logo.png["Tech-Sourche GXTRA/1 Logo"]
+
+Dome Md5/SBX
+~~~~~~~~~~~~
+image:dome-md5sbx-logo.png["Dome Md5/SBX Logo"]
 
 FFB / Creator 3D
 ~~~~~~~~~~~~~~~~
@@ -149,6 +149,28 @@ Raptor MED 12 SL
 ~~~~~~~~~~~~~~~~
 image:tsi-meds-logo.png["Raptor MED 12 SL Logo"]
 
+Fujitsu S-4/Leia2
+~~~~~~~~~~~~~~~~~
+image:fujitsu-s4-leia2-logo.png["Fujitsu S-4/Leia2 Logo"]
+
+SPARCbook 3
+~~~~~~~~~~~
+The smaller logo is the one shown above the banner, the larger is the splash
+screen logo shown first when the SPARCbook is powered on.
+
+image:sparcbook-3-logo.png["SPARCbook 3 Logo"]
+
+image:sparcbook-3-splash.png["SPARCbook 3 Splash Screen"]
+
+SPARCbook 3GX
+~~~~~~~~~~~~~
+The smaller logo is the Tadpole logo shown to the left of the banner, the
+larger is the splash screen logo shown first when the SPARCbook is powered on.
+
+image:sparcbook-3gx-logo.png["SPARCbook 3GX Logo"]
+
+image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
+
 JavaStation-NC / Krups
 ~~~~~~~~~~~~~~~~~~~~~~
 These are the various segments of the boot screen as contained in the OBP: The
@@ -171,28 +193,6 @@ image:krups-oslogo-1.png["JavaStation-NC Loading Animation Frame 1"]
 image:krups-oslogo-2.png["JavaStation-NC Loading Animation Frame 2"]
 image:krups-oslogo-3.png["JavaStation-NC Loading Animation Frame 3"]
 image:krups-oslogo-4.png["JavaStation-NC Loading Animation Frame 4"]
-
-SPARCbook 3
-~~~~~~~~~~~
-The smaller logo is the one shown above the banner, the larger is the splash
-screen logo shown first when the SPARCbook is powered on.
-
-image:sparcbook-3-logo.png["SPARCbook 3 Logo"]
-
-image:sparcbook-3-splash.png["SPARCbook 3 Splash Screen"]
-
-SPARCbook 3GX
-~~~~~~~~~~~~~
-The smaller logo is the Tadpole logo shown to the left of the banner, the
-larger is the splash screen logo shown first when the SPARCbook is powered on.
-
-image:sparcbook-3gx-logo.png["SPARCbook 3GX Logo"]
-
-image:sparcbook-3gx-splash.png["SPARCbook 3GX Splash Screen"]
-
-Fujitsu S-4/Leia2
-~~~~~~~~~~~~~~~~~
-image:fujitsu-s4-leia2-logo.png["Fujitsu S-4/Leia2 Logo"]
 
 
 Acknowledgements
