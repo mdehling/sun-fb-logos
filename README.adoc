@@ -77,6 +77,10 @@ Dome Md5/SBX
 ~~~~~~~~~~~~
 image:dome-md5sbx-logo.png["Dome Md5/SBX Logo"]
 
+Tech-Source GXTRA/1
+~~~~~~~~~~~~~~~~~~~
+image:tsi-gxtra1-logo.png["Tech-Sourche GXTRA/1 Logo"]
+
 FFB / Creator 3D
 ~~~~~~~~~~~~~~~~
 image:ffb-logo.png["FFB / Creator 3D Logo"]
