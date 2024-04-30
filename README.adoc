@@ -101,6 +101,10 @@ XVR-100
 ~~~~~~~
 image:xvr100-logo.png["XVR-100 Logo"]
 
+XVR-200
+~~~~~~~
+image:xvr200-logo.png["XVR-200 Logo"]
+
 XVR-300
 ~~~~~~~
 image:xvr300-logo.png["XVR-300 Logo"]
