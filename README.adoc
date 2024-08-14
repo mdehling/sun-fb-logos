@@ -45,7 +45,7 @@ image:oem-logo-force.png["Force Logo"]
 image:oem-logo-naturetech.png["NatureTech Logo"]
 image:oem-logo-tatung.png["Tatung Logo"]
 
-CG6
+CG6 / CG12 (aka GS aka Matrox SG3-1152B)
 ~~~
 image:cg6-logo.png["CG6 Logo"]
 
