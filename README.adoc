@@ -35,6 +35,11 @@ you have a color framebuffer, e.g., a CG3, the logo is drawn in `sun-blue`
 image:sun-logo.png["B/W Sun Logo"]
 image:sun-logo-blue.png["Blue Sun Logo"]
 
+Oracle/Sun
+~~~~~~~~~~
+This is the new logo as seen when booting Oracle SPARC servers as well as some
+later Sun ones with newer prom releases.
+
 OEM / Clones
 ~~~~~~~~~~~~
 image:oem-logo-axil311.png["Axil 311 Logo"]
@@ -108,6 +113,10 @@ image:xvr200-logo.png["XVR-200 Logo"]
 XVR-300
 ~~~~~~~
 image:xvr300-logo.png["XVR-300 Logo"]
+
+XVR-500
+~~~~~~~
+image:xvr500-logo.png["XVR-500 Logo"]
 
 XVR-600
 ~~~~~~~
